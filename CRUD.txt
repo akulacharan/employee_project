@@ -1,0 +1,59 @@
+For CRUD in Django
+
+Here we are using postgres sql
+
+After creating models
+
+make migrations by using:
+	python manage.py makemigrations employee_register
+
+also run sql migrations : python manage.py sqlmigrate employee_register 0001
+
+Then migrate
+
+create templates 
+	base.html
+	employee_form.html
+	employee_list.html
+
+Add bootstrap to it
+
+For icons we also use 'cdn reference'
+	google : font awesome cdn ,cdnjs.com
+	copy this link rel "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
+
+Also add jumbotron in bootstrap
+
+## Create forms.py and create a class for EmployeeForms
+	in it you have to inherit all the fields in model Employee
+
+
+import forms to the view employee_form {'form':form}
+
+'pip install django-crispy-forms' for front end use
+also add 'crispy-forms' to INSTALLED APPS
+	Also specify the 'CRISPY_TEMPLATE_PACK='bootstrap4'
+	in settings.py
+
+# in employee_form  TOP add
+	{% load crispy_forms_tags %}
+
+	also modify {{forms}} to {{forms|crispy}}
+
+# add positions to postgresql manually in employee_position (table)
+	
+	 # for not showing dashes(--)in position field
+    
+    def __init__(self,*args,**kwargs):
+        super(EmployeeForm,self).__init__(*args,**kwargs)
+        self.fields['position'].empty_label = "select"
+
+for a change in button success bootstrap we use
+	"fontawesome.com classes"
+
+
+
+
+
+
+	
