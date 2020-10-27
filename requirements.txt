@@ -22,7 +22,7 @@ cloudinary==1.21.1
 colorama==0.4.3
 comtypes==1.1.7
 constantly==15.1.0
-cryptography==2.9.2
+cryptography==3.2
 daphne==2.5.0
 DateTime==4.3
 defusedxml==0.6.0
