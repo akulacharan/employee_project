@@ -64,7 +64,7 @@ pyasn1-modules==0.2.8
 PyAudio @ file:///C:/Users/KARTHIK/PycharmProjects/Hi/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 pycodestyle==2.5.0
 pycparser==2.20
-Pygments==2.6.1
+Pygments==2.7.4
 PyHamcrest==2.0.2
 PyInstaller==3.6
 PyJWT==1.7.1
